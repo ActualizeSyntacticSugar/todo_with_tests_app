@@ -1,4 +1,6 @@
 class Task < ApplicationRecord
+  belongs_to :list
+
   def toggle_complete!
     update(complete: !complete)
   end
